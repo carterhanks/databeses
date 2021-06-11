@@ -10,3 +10,16 @@ def sales_reports(log_file): # this line is creating and naming a function
 
 
 sales_reports(log_file) # This line calls the function so it will actually run.
+
+# EXTRA CREDIT
+
+log_file = open("um-server-01.txt")
+
+for line in log_file:
+    line = line.strip()
+    values = line.split(' ')
+    total = int(values[2])
+    if total > 10:
+        print(line)
+
+log_file.close()

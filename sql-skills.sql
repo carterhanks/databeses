@@ -40,14 +40,14 @@
 
 -- select sum(total) from invoice;
 
--- SELECT * FROM invoice_line
--- WHERE unit_price > 0.99;
+-- select * from invoice_line
+-- where unit_price > 0.99;
 
--- SELECT iv.invoice_date "Invoice Date", cus.first_name "First Name", cus.last_name "Last Name", iv.total "Invoice Total" FROM customer cus
--- JOIN invoice iv ON iv.customer_id = cus.customer_id;
+-- select iv.invoice_date "Invoice Date", cus.first_name "First Name", cus.last_name "Last Name", iv.total "Invoice Total" from customer cus
+-- join invoice iv on iv.customer_id = cus.customer_id;
 
--- SELECT cus.first_name "Customer First Name", cus.last_name "Customer Last Name", em.first_name "Support rep first name", em.last_name "Support rep last name" FROM customer cus
--- JOIN employee em ON cus.support_rep_id = em.employee_id;
+-- select cus.first_name "Customer First Name", cus.last_name "Customer Last Name", em.first_name "Support rep first name", em.last_name "Support rep last name" from customer cus
+-- join employee em on cus.support_rep_id = em.employee_id;
 
--- SELECT a.title "Album Title", ar.name "Artist Name" FROM album a
--- JOIN artist ar ON ar.artist_id = a.artist_id;
+-- select a.title "Album Title", ar.name "Artist Name" from album a
+-- join artist ar on ar.artist_id = a.artist_id;
